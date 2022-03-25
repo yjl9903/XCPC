@@ -1,0 +1,1 @@
+@python D:\5-Project\problemAutomata\problem.py %1 %2

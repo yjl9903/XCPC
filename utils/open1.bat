@@ -1,0 +1,1 @@
+@python D:\3-ACM\open.py %1 %2

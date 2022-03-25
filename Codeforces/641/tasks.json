@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "silent",
+        "echo": true,
+        "showReuseMessage": false,
+        "panel": "shared"
+      },
+      "command": "g++",
+      "args": [
+        "--std=c++11",
+        "${file}",
+        "-o",
+        "debug/${fileBasenameNoExtension}.exe",
+        "-O2",
+        "-DXLor"
+      ],
+      "problemMatcher": {
+        "owner": "cpp",
+        "fileLocation": [
+          "relative",
+          "\\"
+        ],
+        "pattern": {
+          "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+          "file": 1,
+          "line": 2,
+          "column": 3,
+          "severity": 4,
+          "message": 5
+        }
+      }
+    }
+  ]
+}

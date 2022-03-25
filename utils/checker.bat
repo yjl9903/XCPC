@@ -1,0 +1,1 @@
+@python D:\5-Project\problemAutomata\judge\checker.py %1 %2 %3 %4

@@ -1,0 +1,1 @@
+@python D:\3-ACM\init.py %1 %2 %3 %4 %5 %6
